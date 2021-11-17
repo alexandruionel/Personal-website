@@ -453,11 +453,12 @@ table {
 }
 /* ==========================================================================Hero========================================================================== */
 .hero {
-	background: url('../img/WIN_20210917_21_04_19_Pro\ \(2\).jpg') right bottom no-repeat;
+	background: url('../img/poza1.jpg') right bottom no-repeat;
 	background-size: contain;
-	padding:0 0 100px 0;	
+	padding:110px 0 100px 0;
 	height:auto;
 	background-color: #FBFBFB;
+	
 	
 }
 .hero h1 {
@@ -484,11 +485,84 @@ table {
 }
 .hero p {
 	letter-spacing:1px;
-	color:#fff;
+	color:#E04343;
 	font-size: 15px;
+}
+/* Boucing Arrow Animation */
+@keyframes arrowbounce {
+	from {
+		-webkit-transform:translateY(0);
+		-moz-transform:translateY(0);
+		transform:translateY(0);
+	}
+	to {
+		-webkit-transform:translateY(-20px);
+		-moz-transform:translateY(-20px);
+		transform:translateY(-20px);
+	}
+}
+@-moz-keyframes arrowbounce {
+	/* Firefox */ from {
+		-webkit-transform:translateY(0);
+		-moz-transform:translateY(0);
+		transform:translateY(0);
+	}
+	to {
+		-webkit-transform:translateY(-20px);
+		-moz-transform:translateY(-20px);
+		transform:translateY(-20px);
+	}
+}
+@-webkit-keyframes arrowbounce {
+	/* Safari and Chrome */ from {
+		-webkit-transform:translateY(0);
+		-moz-transform:translateY(0);
+		transform:translateY(0);
+	}
+	to {
+		-webkit-transform:translateY(-20px);
+		-moz-transform:translateY(-20px);
+		transform:translateY(-20px);
+	}
+}
+@-o-keyframes arrowbounce {
+	/* Opera */ from {
+		-webkit-transform:translateY(0);
+		-moz-transform:translateY(0);
+		transform:translateY(0);
+	}
+	to {
+		-webkit-transform:translateY(-20px);
+		-moz-transform:translateY(-20px);
+		transform:translateY(-20px);
+	}
+}
+.scrollto {
+	padding: 100px 0px 0px 0px;
+	display:block;
+	
+	text-decoration:none;
+	width:200px;
+	margin:0 auto;
+	border-bottom: none;
+}
+.scrollto--arrow  {
+	padding:10px;
+	
+	
+}
+.scrollto--arrow img {
+		
+	animation:arrowbounce 1s alternate infinite;
+	-moz-animation:arrowbounce 1s alternate infinite;
+	/* Firefox */-webkit-animation:arrowbounce 1s alternate infinite;
+	/* Safari and Chrome */-o-animation: arrowbounce 1s alternate infinite;
+	/* Opera */
 }
 
 /* ==========================================================================Intro========================================================================== */
+
+
 .intro p {
 	margin:50px 0 0;
 }
@@ -505,8 +579,8 @@ h1.arrow span {
     color: #E04343;
 }
 /* ==========================================================================About========================================================================== */
-.about-image {
-	height:400px;
+ .about-image {
+	 height:400px;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
@@ -549,7 +623,7 @@ h1.arrow span {
     color: #FFF;
 }
 
-/* ==========================================================================iPhone Section========================================================================== */
+/* ==========================================================================iPhone Section========================================================================== */ */
 .iphone {
 	width:50%;
 	background:#f3f5f8;
@@ -581,7 +655,7 @@ h1.arrow span {
 .swag h1 span {
 	display:block;
 	font-size:25px;
-	margin-top:20px;
+	margin-top:20px; 
 }
 .down-arrow-btn {
 	width:auto;
@@ -593,9 +667,9 @@ h1.arrow span {
 	font-size:16px;
 	line-height:40px;
 	padding:0px 10px;
-	text-align:center;
+	text-align:center; 
 }
-.down-arrow-btn:hover,.down-arrow-btn:focus {
+ .down-arrow-btn:hover,.down-arrow-btn:focus {
 	color:#fff;
 	background:rgba(0,0,0,1);
 }
