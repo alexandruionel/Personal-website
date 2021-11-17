@@ -860,6 +860,17 @@ button,button:focus,button:hover,button:active {
 	outline: none!important;
 }
 
+footer a {
+	color:#a1a9b0;
+}
+footer {
+	background-color:#f3f5f8;
+	padding:40px 0 30px;
+}
+footer p {
+	color: #808080;
+}
+
 /* ==========================================================================FlexSlider Custom CSS========================================================================== */
 #servicesSlider {
 	margin-top:70px;
