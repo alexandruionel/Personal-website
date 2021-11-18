@@ -378,7 +378,7 @@ table {
 /* Menu */
 .menu-wrap {
 	z-index:999;
-	background: rgba(255, 255, 255, 1);
+	background: #FFE801;
 	-webkit-transition:width 0.4s,height 0.4s,-webkit-transform 0.4s;
 	transition:width 0.4s,height 0.4s,transform 0.4s;
 	-webkit-transition-timing-function:cubic-bezier(0.7,0,0.3,1);
@@ -453,11 +453,12 @@ table {
 }
 /* ==========================================================================Hero========================================================================== */
 .hero {
-	background: url('../img/poza1.jpg') right bottom no-repeat;
+	background: url('../img/Screenshot\ 2021-11-18\ 093126.jpg.png') right bottom no-repeat;
 	background-size: contain;
-	padding:110px 0 100px 0;
+	padding:250px 0 100px 0;
 	height:auto;
-	background-color: #FBFBFB;
+	background-color:white;
+	
 	
 	
 }
@@ -467,6 +468,7 @@ table {
 	margin: 0;
 	font-weight: 600;
 	line-height: 95px;
+	
 	/* text-transform: uppercase; */
 }
 .hero h1 span {
@@ -1031,6 +1033,8 @@ ul.slides li {
 		font-size: 100px;
 		line-height: 80px;
 		margin-top: 65px;
+		
+		
 }
 }
 /* 480px (WVGA - Low End Windows Phone) */
@@ -1100,23 +1104,25 @@ ul.slides li {
 /** Responsive fixes **/
 @media screen and (max-width:767px) {
 	.inner {
-    padding-top: 10px;
-    text-align: center;
+    padding-top: 60px;
+    /* text-align: center; */
 	}
 
 	.hero h3 {
-	    letter-spacing: 10px;
+	    letter-spacing: 3px;
 	}
 
 
 	.hero {
 	    padding-bottom: 0;
 	}
-
-	.subscribe input[type=text] {
-	    width: 50%;
-	    margin-bottom: 30px;
+	.hero h1{
+		font-size: 53px;
+		letter-spacing:0.5px;	
+		
 	}
+
+	
 
 	.btn-send {
 	    float: none;
@@ -1142,9 +1148,10 @@ ul.slides li {
 @media screen and (max-width:991px) {
 	.hero {
     	padding: 0px;
+		
+
+		
 	}
 
-	.subscribe {
-	    padding-bottom: 40px;
-	}
+	
 }
